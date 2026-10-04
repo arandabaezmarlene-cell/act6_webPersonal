@@ -1,0 +1,324 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f7f3f8;
+    color: #333;
+}
+
+
+/* =========================
+   ENCABEZADO
+========================= */
+
+header {
+    background: linear-gradient(135deg, #8e44ad, #c77dff);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+
+/* =========================
+   MENÚ
+========================= */
+
+nav {
+    background-color: #3d2452;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #e0aaff;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+    width: 85%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #8e44ad;
+}
+
+
+/* =========================
+   IMAGEN PRINCIPAL
+========================= */
+
+.foto {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    display: block;
+    margin: 20px auto;
+}
+
+
+/* =========================
+   GALERÍA
+========================= */
+
+.galeria {
+    display: flex;
+
+    justify-content: center;
+
+    gap: 25px;
+
+    flex-wrap: wrap;
+}
+
+
+.tarjeta {
+    width: 250px;
+
+    background-color: #faf5fc;
+
+    border-radius: 15px;
+
+    padding: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
+
+.tarjeta img {
+    width: 100%;
+
+    height: 170px;
+
+    object-fit: cover;
+
+    border-radius: 12px;
+}
+
+
+.tarjeta h3 {
+    color: #8e44ad;
+}
+
+
+.tarjeta img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   PÁRRAFOS
+========================= */
+
+p {
+    line-height: 1.7;
+}
+
+
+/* =========================
+   SPAN
+========================= */
+
+.resaltado {
+    color: #8e44ad;
+    font-weight: bold;
+}
+
+.rosa {
+    color: #e84393;
+    font-weight: bold;
+}
+
+.azul {
+    color: #2980b9;
+    font-weight: bold;
+}
+
+.verde {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.morado {
+    color: #6c3483;
+    font-weight: bold;
+}
+
+.naranja {
+    color: #e67e22;
+    font-weight: bold;
+}
+
+
+/* =========================
+   FRASE
+========================= */
+
+.frase {
+    text-align: center;
+
+    font-style: italic;
+
+    font-size: 22px;
+
+    color: #8e44ad;
+}
+
+
+/* =========================
+   LISTAS
+========================= */
+
+li {
+    margin: 10px;
+}
+
+
+/* =========================
+   TABLA
+========================= */
+
+table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    margin-top: 20px;
+}
+
+th {
+    background-color: #8e44ad;
+
+    color: white;
+}
+
+th,
+td {
+    border: 1px solid #ccc;
+
+    padding: 12px;
+
+    text-align: left;
+}
+
+tr:nth-child(even) {
+    background-color: #f3e5f5;
+}
+
+
+/* =========================
+   BOTÓN
+========================= */
+
+.boton {
+    display: inline-block;
+
+    background-color: #8e44ad;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 12px 20px;
+
+    border-radius: 8px;
+}
+
+.boton:hover {
+    background-color: #6c3483;
+}
+
+
+/* =========================
+   VIDEOS Y MAPAS
+========================= */
+
+iframe {
+    max-width: 100%;
+}
+
+
+/* =========================
+   PIE DE PÁGINA
+========================= */
+
+footer {
+    background-color: #3d2452;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 25px;
+
+    margin-top: 40px;
+}
+
+
+/* =========================
+   CELULARES
+========================= */
+
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 30px;
+    }
+
+    nav a {
+        display: block;
+
+        margin: 10px;
+    }
+
+    main {
+        width: 95%;
+    }
+
+    iframe {
+        width: 100%;
+    }
+
+}
